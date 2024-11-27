@@ -1,0 +1,21 @@
+{
+  "name": "QuickOptimize",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node source/index.js --website https://www.lipsum.com --css=true --js=true"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^7.0.2",
+    "axios": "^1.7.8",
+    "jsdom": "^25.0.1",
+    "purgecss": "^7.0.2",
+    "terser": "^5.36.0",
+    "yargs": "^17.7.2"
+  },
+  "description": "A tool to download and optimize CSS and JS files from a specified website."
+}
