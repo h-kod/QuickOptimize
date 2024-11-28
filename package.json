@@ -1,5 +1,8 @@
 {
-  "name": "QuickOptimize",
+  "name": "@b8t/quickoptimize",
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {

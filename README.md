@@ -12,7 +12,7 @@ QuickOptimize is a tool designed to download and optimize CSS and JS files from 
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/QuickOptimize.git
+    git clone https://github.com/h-kod/QuickOptimize.git
     ```
 2. Navigate to the project directory:
     ```sh
