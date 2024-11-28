@@ -27,10 +27,10 @@ QuickOptimize is a tool designed to download and optimize CSS and JS files from 
 
 To start the optimization process, run the following command:
 ```sh
-node source/index.js --website <website_url> --css=<true|false> --js=<true|false>
+node index.js --website <website_url> --css=<true|false> --js=<true|false>
 ```
 ```sh
-node source/index.js --website https://www.lipsum.com --css=true --js=true
+node index.js --website https://www.lipsum.com --css=true --js=true
 ```
 Replace `<website_url>` with the URL of the website you want to optimize, and set `--css` and `--js` to `true` or `false` depending on whether you want to optimize CSS and/or JS files.
 

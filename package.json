@@ -7,7 +7,7 @@
     "start": "node source/index.js --website https://www.lipsum.com --css=true --js=true"
   },
   "keywords": [],
-  "author": "",
+  "author": "h-kod",
   "license": "ISC",
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^7.0.2",
@@ -17,5 +17,14 @@
     "terser": "^5.36.0",
     "yargs": "^17.7.2"
   },
-  "description": "A tool to download and optimize CSS and JS files from a specified website."
+  "description": "A tool to download and optimize CSS and JS files from a specified website.",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h-kod/QuickOptimize.git"
+  },
+  "bugs": {
+    "url": "https://github.com/h-kod/QuickOptimize/issues"
+  },
+  "homepage": "https://github.com/h-kod/QuickOptimize#readme"
 }
