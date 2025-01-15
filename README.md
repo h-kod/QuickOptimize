@@ -67,7 +67,7 @@ The tool will create an `/output` directory in the project root folder. Inside t
 Example structure:
 ```
 output/
-└── www.lipsum.com/
+└── https://www.lipsum.com/
     ├── css/
     │   ├── styles.css
     │   └── m-styles.css
