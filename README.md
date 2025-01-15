@@ -51,27 +51,29 @@ node index.js --website https://www.lipsum.com --css=true --js=true
 
 Replace `<website_url>` with the URL of the website you want to optimize, and set `--css` and `--js` to `true` or `false` depending on whether you want to optimize CSS and/or JS files.
 
+**Note**: All optimized and original files will be saved in the `/output` directory.
+
 ## Output
 
 The tool will create an `/output` directory in the project root folder. Inside this directory:
 - Files are organized by domain name (e.g., `/output/www.lipsum.com/`)
 - CSS files are stored in `/css` subdirectory
-  - Original files with `.css` extension
-  - Optimized files with `.min.css` extension
+  - Original files named as `filename.css`
+  - Minified files named as `m-filename.css`
 - JS files are stored in `/js` subdirectory
-  - Original files with `.js` extension
-  - Optimized files with `.min.js` extension
+  - Original files named as `filename.js`
+  - Minified files named as `m-filename.js`
 
 Example structure:
 ```
 output/
 └── www.lipsum.com/
     ├── css/
-    │   ├── style.css
-    │   └── style.min.css
+    │   ├── styles.css
+    │   └── m-styles.css
     └── js/
         ├── main.js
-        └── main.min.js
+        └── m-main.js
 ```
 
 ## Dependencies
