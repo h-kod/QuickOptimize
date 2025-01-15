@@ -25,14 +25,54 @@ QuickOptimize is a tool designed to download and optimize CSS and JS files from 
 
 ## Usage
 
-To start the optimization process, run the following command:
+You can run the tool using one of these methods:
+
+1. Using npm (recommended):
+```sh
+npm run compress -- --website <website_url> --css --js
+```
+
+Example:
+```sh
+npm run compress -- --website https://www.lipsum.com --css --js
+```
+
+2. Using node directly:
 ```sh
 node index.js --website <website_url> --css=<true|false> --js=<true|false>
 ```
+
+**Important**: The website URL must start with `https://`. URLs without the protocol will not work.
+
+Example:
 ```sh
 node index.js --website https://www.lipsum.com --css=true --js=true
 ```
+
 Replace `<website_url>` with the URL of the website you want to optimize, and set `--css` and `--js` to `true` or `false` depending on whether you want to optimize CSS and/or JS files.
+
+## Output
+
+The tool will create an `/output` directory in the project root folder. Inside this directory:
+- Files are organized by domain name (e.g., `/output/www.lipsum.com/`)
+- CSS files are stored in `/css` subdirectory
+  - Original files with `.css` extension
+  - Optimized files with `.min.css` extension
+- JS files are stored in `/js` subdirectory
+  - Original files with `.js` extension
+  - Optimized files with `.min.js` extension
+
+Example structure:
+```
+output/
+└── www.lipsum.com/
+    ├── css/
+    │   ├── style.css
+    │   └── style.min.css
+    └── js/
+        ├── main.js
+        └── main.min.js
+```
 
 ## Dependencies
 
